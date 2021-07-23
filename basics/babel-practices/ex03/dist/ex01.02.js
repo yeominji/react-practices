@@ -10,12 +10,11 @@ const users = [{
   email: 'dooly@gmail.com'
 }]; // 객체분해(ES6)
 
-function print(_ref) {
-  let {
-    no,
-    name,
-    email
-  } = _ref;
+function print({
+  no,
+  name,
+  email
+}) {
   // 템플릿 문자열(ES6)
   console.log(`${no}: ${name} : ${email}`);
 } // for..of(ES6)

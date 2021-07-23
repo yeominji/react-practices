@@ -1,6 +1,6 @@
 'use strict'; // 블록 스코프 변수(ES6)
 
-var users = [{
+const users = [{
   no: 0,
   name: '마이콜',
   email: 'michol@gmail.com'
@@ -20,6 +20,6 @@ function print({
 } // for..of(ES6)
 
 
-for (var user of users) {
+for (let user of users) {
   print(user);
 }

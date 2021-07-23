@@ -16,7 +16,7 @@ function print({
   email
 }) {
   // 템플릿 문자열(ES6)
-  console.log("".concat(no, ": ").concat(name, " : ").concat(email));
+  console.log(`${no}: ${name} : ${email}`);
 } // for..of(ES6)
 
 

@@ -20,7 +20,6 @@ function print({
 } // for..of(ES6)
 
 
-for (var _i = 0, _users = users; _i < _users.length; _i++) {
-  let user = _users[_i];
+for (let user of users) {
   print(user);
 }
