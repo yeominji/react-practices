@@ -13,3 +13,4 @@
 ### Gallery App [과제]
 ### Scheduler App# yeominji-react-practices-
 # recat-practices
+# react-practices
