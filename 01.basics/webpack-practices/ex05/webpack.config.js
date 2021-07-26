@@ -1,6 +1,5 @@
 
 const path = require('path');
-const loader = require('sass-loader');
 
 module.exports = {
     entry: path.resolve('src/index.js'),
@@ -10,22 +9,15 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.js$/i,
-            exclude : /node_modules/,
-            loader : 'babel-loader'
-        },{
             test: /\.css$/i,
-            use:['style-loader', 'css-loader']
+            use:['style-loader', {loader:'css-loader', options:{modules :true}}]
         }, {
-            test: /\.s[ac]ss$/i,
-            use: ['style-loader', 'css-loader', 'sass-loader']
-        }, {
-            test: /\.svg$/i,
-            loader: 'file-loader',
-            options: {
-                outputPath: '/assets/images',
-                name: '[name].[ext]' 
-            }
+            test: /\.s[ac]ss/i,
+            use: [
+                'style-loader',
+                'css-loader',
+                'sass-loader'
+            ]
         }]
     },
     devServer: {

@@ -4,9 +4,9 @@ import React from 'React';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className={styles.App}>
+      <header className={style['App-header']}>
+        <img src={logo} className={style['App-logo']} alt="logo" />
         <p>
        React 1Week 과제 입니다.
         </p>

@@ -3,8 +3,8 @@
 
 1. 프로젝트 생성 
 ```bash
-$mkdir ex05
-$ cd ex05
+$mkdir ex06
+$ cd ex06
 $npm init -y
 $npm i -D webpack webpack-cli webpack-dev-sever babel-loader @babel/core @babel/preset-env @babel/preset-react
 $npm i react react-dom
