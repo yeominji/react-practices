@@ -1,4 +1,4 @@
-## REact Pracratices -Component
+## React Pracratices -Component
 
 ### ex01 :Property : Component 작성 (Data Flow Top -> Down)
 ### ex02 :Component styling        
