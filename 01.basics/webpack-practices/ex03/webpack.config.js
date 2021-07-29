@@ -2,6 +2,7 @@ const path = require('path');
 const { resourceUsage } = require('process');
 
 module.exports = {
+    mode: 'development',
     entry: path.resolve('src/index.js'),
     output: {
         path: path.resolve('public'),

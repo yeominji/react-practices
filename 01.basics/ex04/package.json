@@ -5,8 +5,8 @@
 
   "main": "dev-server.mjs",
   "scripts": {
-    "start": "node dev-server.mjs",
-    "test": "",
+    "debug": "node dev-server.mjs",
+   
     "build":"npx webpack ./src/index.js -o ./public/"
   },
   "keywords": [],

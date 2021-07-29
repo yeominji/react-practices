@@ -1,3 +1,5 @@
+import './assets/'
+
 const App =function(){
 const app =document.createElement('h1');
 app.className='Header'

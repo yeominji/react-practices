@@ -5,8 +5,8 @@
   "type": "module",
   "main": "dev-server.js",
   "scripts": {
-    "start": "node dev-server",
-    "test": ""
+    "debug": "node dev-server"
+    
   },
   "keywords": [],
   "author": "",
