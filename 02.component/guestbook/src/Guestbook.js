@@ -2,6 +2,7 @@ import React from 'react';
 import GuestbookForm from './GuestbookForm';
 import GuestbookList from './GuestbookList';
 import GuestbookList_item from './GuestbookList_item';
+import DeleteFrom from './DeleteFrorm'
 
 export default function Guestbook(){
     return(
@@ -11,6 +12,7 @@ export default function Guestbook(){
   <GuestbookForm/>
   <GuestbookList/>
   <GuestbookList_item/>
+  <DeleteFrom/>
   
         </div>
       
