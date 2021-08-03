@@ -1,18 +1,23 @@
-import React, { useRef } from 'react';
+import React, { Component, useRef } from 'react';
 import './assets/scss/App.scss';
 
-export default function App() {
-    const outterRef = useRef(null);
-    const innerRef = useRef(null);
+export default class  App extends Component {
+   onScroll(e){
+    console.log(this.outterRef.scrollTop ,":" ,this .outterRef.clientHeight,':',this.outterRef);
 
-    return (
+   }
+    render(){
+    return(
         <div
-            className={'App'}>
-            <div
-                ref={ innerRef }>
+        ref ={ref =>this.outterRef =ref}
+        
+            className={'App'}
+            onScroll ={this.onScroll.bind(this) }>
+            <div>
+                
                 <ul>
                     { Array.from({length: 100}, (_, i) => i+1).map(i =>
-                        <li>
+                        <li key ={i}>
                             { `아이템 ${i} 입니다.` }
                         </li>
                     ) }
@@ -20,4 +25,5 @@ export default function App() {
             </div>
         </div>
     );
+  }
 }

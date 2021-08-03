@@ -4,7 +4,12 @@ import Guestbook from './Guestbook';
 
 export default function App() {
     return (
-        <Guestbook />
+        <div className={'App'}>
+            <div>
+                <Guestbook />
+                </div>
+        </div>
+        
        
         
     );

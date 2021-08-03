@@ -4,11 +4,11 @@ html,
 body    { font:0.75em "맑은 고딕", 돋움, 굴림; text-align:center }
 ul, ol	{ list-style-type: none }
 
-#root,
-.App    { height:100%; width:540px; margin:0 auto }
+#root  { height:100%; width:100%;}
+.App    { height:100%; width:100%; overFlow}
 
 
-.Guestbook			{ margin:20px 0; width:100%; background-color:#fff }
+.Guestbook			{ margin: 0 auto; width:540px; background-color:#fff; }
 .Guestbook h1		{
     color: #5C5C5C;
     text-align: left;
