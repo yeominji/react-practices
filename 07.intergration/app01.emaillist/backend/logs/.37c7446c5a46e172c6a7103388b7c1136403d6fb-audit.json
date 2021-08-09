@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/yeominji/react-practices/07.intergration/app01.emaillist/backend/logs/.37c7446c5a46e172c6a7103388b7c1136403d6fb-audit.json",
+    "files": [
+        {
+            "date": 1628494791017,
+            "name": "/Users/yeominji/react-practices/07.intergration/app01.emaillist/backend/logs/2021-08-09.log",
+            "hash": "bda6d09d1c51600e06128ac53e129fca"
+        }
+    ]
+}

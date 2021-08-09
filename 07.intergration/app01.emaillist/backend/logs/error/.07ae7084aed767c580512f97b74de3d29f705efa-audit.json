@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/yeominji/node-practices/mysite/logs/error/.07ae7084aed767c580512f97b74de3d29f705efa-audit.json",
+    "files": [
+        {
+            "date": 1626768162820,
+            "name": "/Users/yeominji/node-practices/mysite/logs/error/2021-07-20.error.log",
+            "hash": "e27a3b4f86b1e2cf61c38a1a20a0e149"
+        }
+    ]
+}
