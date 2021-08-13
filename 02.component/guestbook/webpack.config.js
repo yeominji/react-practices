@@ -10,21 +10,15 @@ module.exports = (env) =>  {
         },
         module: {
             rules:[{
-                test: /\.css$/i,
-                use:['style-loader','css-loader' ]
+                test: /\.(sa|sc|c)ss$/i,
+                use:[
+                    'style-loader', 
+                    { loader: 'css-loader', options: { modules: true} }, 
+                    'sass-loader'
+                ]
             }, {
-                test: /\.s[ac]ss$/i,
-                use: [
-                    'style-loader',
-                    {loader:'css-loader', options:{ modules: true } },
-                    'sass-loader']
-            }, {
-                test: /\.(svg|jpe?g|gif|png|tiff?|bmp|ico|)$/i,
-                loader: 'file-loader',
-                options: {
-                    outputPath: '/assets/images',
-                    name: '[name].[ext]'
-                }
+                test: /\.(png|gif|jpe?g|svg|ico|tiff?|bmp)$/i,
+                type: 'asset/resource'
             }, {
                 test: /\.js$/i,
                 exclude: /node_modules/,

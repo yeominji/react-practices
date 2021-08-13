@@ -1,21 +1,16 @@
 import React from 'react';
-import GuestbookForm from './GuestbookForm';
-import GuestbookList from './GuestbookList';
-import GuestbookList_item from './GuestbookList_item';
-import DeleteFrom from './DeleteFrorm'
+import WriteForm from './WriteForm';
+import MessageList from './MessageList';
+import styles from './assets/scss/Guestbook.scss';
 
-export default function Guestbook(){
-    return(
-        <div class="Guestbook">
-        <h1>방명록</h1>
+import messages from './assets/json/messages.json';
 
-  <GuestbookForm/>
-  <GuestbookList/>
-  <GuestbookList_item/>
-  <DeleteFrom/>
-  
+export default function Guestbook() {
+    return (
+        <div className={ styles.Guestbook }>
+            <h1>방명록</h1>
+            <WriteForm />
+            <MessageList messages={ messages }/>
         </div>
-      
-        
     );
 }
